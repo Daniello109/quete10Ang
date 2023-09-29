@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CocktailService } from 'src/services/cocktail.service';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, HttpClientModule
   ],
   providers: [CocktailService],
   bootstrap: [AppComponent]
